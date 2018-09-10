@@ -43,7 +43,7 @@ api['/ping should respond with a 200 for any method'] = done => {
 };
 
 //test user route for a GET
-api['/users GET should respond with a 200 and a user'] = done => {
+api['/users GET should respond with a 200'] = done => {
     helpers.makeHttpRequest('GET', '/api/users', res => {
         assert.strictEqual(res.statusCode, 200);
         done();
